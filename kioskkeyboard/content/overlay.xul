@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<overlay id="kioskkeyboardOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://kioskkeyboard/content/overlay.js"/>
+	
+	<gtoolbox>
+		<gtoolbar collapsed="true" id="kioskkeyboard_toolbar" flex="1">
+			<hbox id="kioskkeyboard_keyboard" orient="vertical" flex="1">
+			</hbox>
+			<vbox id="kioskkeyboard_special" >
+				<hbox flex="1">
+					<button label="&lt;- Backspace" flex="1" oncommand="KioskKeyboard.doBackspace()"/>
+					<button label="Clear" flex="1" oncommand="KioskKeyboard.doClear()"/>
+					<button label="Enter" flex="1" oncommand="KioskKeyboard.doEnter()"/>
+				</hbox>
+				<hbox flex="1">
+					<button label="Space" flex="1" oncommand="KioskKeyboard.doSpace()" />
+					<button label="Shift" flex="1" oncommand="KioskKeyboard.doShift()" id="kioskkeyboard_shift"/>
+					<button label="CapsLock" flex="1" oncommand="KioskKeyboard.doCaps()" id="kioskkeyboard_caps"/>
+				</hbox>
+			</vbox>
+		</gtoolbar>
+	</gtoolbox>
+</overlay>
