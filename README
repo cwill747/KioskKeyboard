@@ -1,0 +1,26 @@
+Kioskkeyboard
+Version 1.6
+Author: Cameron Will
+Date: 8 Jul 2010
+Purpose: Provide a keyboard for Firefox
+This program is being distributed under the GPL. You must do the same.
+http://www.gnu.org/licenses/gpl.html
+
+Original Code
+FxKeyboard
+Version: 1.2
+Author:  Marko Zabreznik
+Date:    22 Feb 2009
+Purpose: Firefox Keyboard
+
+This keyboard has been rebranded for English users, and some functionality
+has been changed. All credit for the original code goes to Marko Zabreznik,
+who has kindly allowed me to host the project myself and edit the code.
+
+This Firefox extension will allow Firefox to pop up an onscreen keyboard at the bottom of the Firefox window, as part of the Firefox program, when the user clicks on an editable region such as a textbox or textarea. This is useful when running Firefox in fullscreen mode in a manner where you wouldn't want a program to appear above Firefox, such as a locked down kiosk implementation.
+
+To install, go to Firefox and click File->Open File and select the .xpi file. Installation should begin automatically.
+
+All the editable code is really in the overlay.js file. This is where the true functions of the code lie. To re-compile the extension, select all the files included, except the .xpi file, and compress it in the .zip format. Then rename it to .xpi. If you didn't make coding errors, it should give you an installable Firefox extension.
+
+If you made changes that you think would benefit the community, please request for your changes to be pushed into the Master branch. Feel free to branch and edit as you will.
